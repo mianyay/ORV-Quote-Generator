@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#quote-container {
+    padding: 20px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0);
+    max-width: 500px;
+    color: black;
+}
+
+button {
+    background: #4b4955;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #37363f;
+}
