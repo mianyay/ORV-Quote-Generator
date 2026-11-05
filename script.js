@@ -19,12 +19,30 @@ const quotes = [
     {text: "Read a lot and apply what you've read in real life", author: "SingShong"}
 ];
 
+const characterImages = {
+    "Han Sooyoung": "images/hansooyoung.png",
+    "Kim Dokja": "images/kimdokja.png",
+    "Yoo Joonghyuk": "images/yoo.png",
+    "SingShong": "images/placeholder.png",
+    "Secretive Plotter": "images/secret.png",
+}
+
+const badges = document.getElementById("badges")
+
 const quoteText = document.getElementById("quote");
 const quoteAuthor = document.getElementById("author");
 const newQuote = document.getElementById("new-quote");
 
 newQuote.addEventListener("click", function () {
     const generateRandom = Math.floor(Math.random() * quotes.length);
-    quoteText.textContent = `"${quotes[generateRandom].text}"`;
-    quoteAuthor.textContent = `- ${quotes[generateRandom].author}`;
+    const chosen = quotes[generateRandom]
+
+    quoteText.textContent = `"${chosen.text}"`;
+    quoteAuthor.textContent = `- ${chosen.author}`;
+
+    const img = document.createElement("img");
+    img.src = characterImages[chosen.author];
+    img.alt = chosen.author;
+    img.title = chosen.author; 
+    badges.appendChild(img);
 });
