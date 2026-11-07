@@ -27,8 +27,8 @@ const characterImages = {
     "Secretive Plotter": "images/secret.png",
 }
 
-const badges = document.getElementById("badges")
-
+const badges = document.getElementById("badges");
+const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const quoteAuthor = document.getElementById("author");
 const newQuote = document.getElementById("new-quote");
@@ -36,6 +36,10 @@ const newQuote = document.getElementById("new-quote");
 newQuote.addEventListener("click", function () {
     const generateRandom = Math.floor(Math.random() * quotes.length);
     const chosen = quotes[generateRandom]
+
+    quoteContainer.classList.remove("fade-in");
+    void quoteContainer.offsetWidth;
+    quoteContainer.classList.add("fade-in");
 
     quoteText.textContent = `"${chosen.text}"`;
     quoteAuthor.textContent = `- ${chosen.author}`;
