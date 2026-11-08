@@ -5,7 +5,7 @@ ORV-themed quote generator!!
 https://mianyay.github.io/ORV-Quote-Generator/
 
 ## About
-Every time a quote is generated, the corresponding author will be available to be seen in the character quote badge collection on the side. All these quotes are ORV-themed, so they will all be from ORV, so spoiler warning!! A cute Biyoo is on the side too, where users can hover and make Biyoo shake 
+Every time a quote is generated, the corresponding author appears in the character quote badge collection on the side. All these quotes are ORV-themed, so they will all be from ORV, so spoiler warning!! A cute Biyoo is on the side too, where users can hover and make Biyoo shake 
 
 ## Features
 - Randomised Quote Generation
@@ -30,5 +30,5 @@ Download the files and open index.html in a browser.
 
 ## Credits
 https://www.instructables.com/Create-Your-Own-Inspirational-Quote-Generator-With/
-Thanks for showing the overall structure the quote generation :DDDD
+Thanks for showing the overall structure of the quote generation :DDDD
 
