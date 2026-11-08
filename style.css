@@ -65,3 +65,22 @@ button:hover {
 .fade-in {
     animation: fade 1.2s ease;
 }
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg); }
+    25% {transform: rotate(-6deg); }
+    50% {transform: rotate(6deg); }
+    75% {transform: rotate(-4deg); }
+    100% {transform: rotate(0deg); }
+}
+
+.biyoo {
+    position: fixed;
+    left: 20px;
+    width: 400px;
+    max-width: 30vw;
+}
+
+.biyoo:hover {
+    animation: wiggle 1s ease-in-out infinite;
+}

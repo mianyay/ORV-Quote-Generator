@@ -15,8 +15,12 @@ const quotes = [
     {text: "It isn’t important to read the letters. The important thing is where the letters lead you.", author: "Kim Dokja"},
     {text: "I believe in you more than the future that hasn’t come yet.", author: "SingShong"},
     {text: "The light of countless constellations was shining towards him but none of them could reach Yoo Joonghyuk. No matter how many years they had lived, they couldn't understand the regressor who suffered the destruction of the world twice.", author: "SingShong"},
-    {text: "Did copyright exist for one's life, too? But, was it okay to describe one's life as a 'work of an author'?", author: "SingShong"},
-    {text: "Read a lot and apply what you've read in real life", author: "SingShong"}
+    {text: "Did copyright exist for one's life, too? But, was it okay to describe one's life as a 'work of an author'?", author: "Kim Dokja"},
+    {text: "Read a lot and apply what you've read in real life", author: "SingShong"},
+    {text: "I was an ordinary person with ordinary skills. But even so, this didn't mean I could only do ordinary things.", author: "Kim Dokja"},
+    {text: "If this story can really save you... If you regained just a little of your memories and remember us just one more time... Then I'll keep writing the epilogue for you until the end of time, for eternity", author: "Han Sooyoung"},
+    {text: "The reason why she suddenly wrote the essay was to make me the son of a murderer, not a murderer.", author: "Kim Dokja"},
+    {text: "If you want my bones, I shall give them to you. If you want my heart, then I will gladly hand it over. However, you will have to risk half of all your Stories.", author: "Jung Heewon"},
 ];
 
 const characterImages = {
@@ -25,6 +29,7 @@ const characterImages = {
     "Yoo Joonghyuk": "images/yoo.png",
     "SingShong": "images/placeholder.png",
     "Secretive Plotter": "images/secret.png",
+    "Jung Heewon": "images/heewon.png",
 }
 
 const badges = document.getElementById("badges");
@@ -39,7 +44,7 @@ newQuote.addEventListener("click", function () {
 
     quoteContainer.classList.remove("fade-in");
     void quoteContainer.offsetWidth;
-    quoteContainer.classList.add("fade-in");
+    quoteContainer.classList.add("fade-in")
 
     quoteText.textContent = `"${chosen.text}"`;
     quoteAuthor.textContent = `- ${chosen.author}`;
